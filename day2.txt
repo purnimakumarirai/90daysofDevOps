@@ -1,10 +1,12 @@
-
-mkdir newFolder              # make a new folder 'newFolder'
-
-mkdir .NewFolder              # make a hidden directory (also . before a file to make it hidden)
-
-mkdir A B C D                  #make multiple directories at the same time
-
-mkdir /home/user/Mydirectory   # make a new folder in a specific location
-
-mkdir -p  A/B/C/D              # make a nested directory
+-------------------------------------------------------------------------------------------------------------|
+|  mkdir newFolder              # make a new folder 'newFolder'                                              |
+|                                                                                                            |
+|   mkdir .NewFolder              # make a hidden directory (also . before a file to make it hidden)         |
+|                                                                                                            |
+|   mkdir A B C D                  #make multiple directories at the same time                               |
+|                                                                                                            |
+|   mkdir /home/user/Mydirectory   # make a new folder in a specific location                                |
+|                                                                                                            |
+|   mkdir -p  A/B/C/D              # make a nested directory                                                 |
+|                                                                                                            |
+-------------------------------------------------------------------------------------------------------------|
