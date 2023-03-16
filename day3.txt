@@ -58,4 +58,9 @@ ans-> vim Color.txt
    -> grey
    -> esc shift:wq!
    -> cat Color.txt
+   
 11.To find the difference between fruits.txt and Colors.txt file.
+
+ans-> diff fruit.txt Color.txt
+
+
