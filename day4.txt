@@ -3,10 +3,37 @@ Tasks
 
 1.Explain in your own words and examples, what is Shell Scripting for DevOps.
 
-ans-> 
+ans-> The kernel is a computer program at the core of a computer's operating system 
+      and generally has complete control over everything in the system.
+      The kernel is a core component of an operating system and 
+      serves as the main interface between the computer's physical hardware and the processes running on it.
+      The kernel enables multiple applications to share hardware resources by providing access 
+      to CPU, memory, disk I/O, and networking
 
 
 2.What is #!/bin/bash? can we write #!/bin/sh as well?
+
+ans-> This first line (#!/bin/bash or #!/bin/sh) has a name. It is known as ‘she-bang‘(shabang). This derives from the concatenation of the tokens sharp (#) and bang (!). It is also called as sh-bang, hashbang, poundbang or hash-pling. In computing, a she-bang is the character sequence consisting of the characters number sign and exclamation mark (#!) at the beginning of a script.
+
+
 3.Write a Shell Script which prints I will complete #90DaysOofDevOps challenge
+
+ans-> mkdir script
+    - cd script
+    - echo"I will be a great DevOps Engineer"
+    
+   -> nano devops_first.sh
+   -> #!/bin/bash
+   -> echo"I will be a great DevOps Engineer"
+   -> conrol x +Y(yes) + tap(to save)
+   -> bash devops_first.sh
+
 4.Write a Shell Script to take user input, input from arguments and print the variables.
+
+ans-> #!/bin/bash
+      echo "I WILL BE A GREAT DEVOPS ENGINEER"
+      #echo $BASH
+      name="Purnima"
+      echo "hello ${name}" 
+
 5.Write an Example of If else in Shell Scripting by comparing 2 numbers
