@@ -33,36 +33,55 @@ ans-> mkdir script
 ans-> #!/bin/bash
       echo "I WILL BE A GREAT DEVOPS ENGINEER"
       #echo $BASH
-      name="Purnima"
+      name="NARAYAN"
       echo "hello ${name}" 
+     
+     
+     ----------------------------------------------------------------------------------
+      nano devops_first.sh TOMY #argument
       
-      ->#!/bin/bash
+        #!/bin/bash
 
-echo "I WILL BE A GREAT DEVOPS ENGINEER"
+        echo "I WILL BE A GREAT DEVOPS ENGINEER"
 
-#echo $BASH
+        #echo $BASH
 
-name="Purnima"
+        name="Purnima"
 
-echo "hello ${name},please enter your age"
+        echo "hello ${name},please enter your age"
 
-read age
+        read age
 
-echo "my age is ${age}"
+        echo "my age is ${age}"
 
-echo "sub:hello,$1"
+        echo "sub:hello,$1"  #argument passing 
 
-sleep 2
+        sleep 2
 
-echo "Me:hey how you doing"
+        echo "Me:hey how you doing"
 
-sleep 2
+        sleep 2
 
-echo "sub: I am doing good,thankyou"
+        echo "sub: I am doing good,thankyou"
 
 5.Write an Example of If else in Shell Scripting by comparing 2 numbers
 
-ans-> #!/bin/bash
+ans-> nano if_test.sh 
+     #!/bin/bash
+
+    -echo "enter two number"
+    -read a b
+    -echo "a = $a"
+    -echo "b = $b"
+
+    -if [ $a = $b ]
+    -then
+    - echo "a and b is equal "
+    -else
+    - echo "b and a is'not equal"
+    -fi
+-----------------------------------------------------------------
+     #!/bin/bash
 
      -if [ "$1" = "like" ]
      -then
@@ -70,5 +89,6 @@ ans-> #!/bin/bash
      -else
      - echo "OK,comment"
      -fi
-
+     ./if_test.sh like
+      
 
