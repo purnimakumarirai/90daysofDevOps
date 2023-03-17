@@ -1,7 +1,9 @@
 Tasks
 ------------------------------------------------------------------------------------
-
 1.Explain in your own words and examples, what is Shell Scripting for DevOps.
+ans->  Shell is a command-line interpreter and Shell script is nothing but a list of commands executed by the shell. Shell scripting for DevOps refers to the commands used to automate the tasks written in . sh file.
+
+what is kernel?
 
 ans-> The kernel is a computer program at the core of a computer's operating system 
       and generally has complete control over everything in the system.
