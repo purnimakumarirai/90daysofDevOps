@@ -35,5 +35,40 @@ ans-> #!/bin/bash
       #echo $BASH
       name="Purnima"
       echo "hello ${name}" 
+      
+      ->#!/bin/bash
+
+echo "I WILL BE A GREAT DEVOPS ENGINEER"
+
+#echo $BASH
+
+name="Purnima"
+
+echo "hello ${name},please enter your age"
+
+read age
+
+echo "my age is ${age}"
+
+echo "sub:hello,$1"
+
+sleep 2
+
+echo "Me:hey how you doing"
+
+sleep 2
+
+echo "sub: I am doing good,thankyou"
 
 5.Write an Example of If else in Shell Scripting by comparing 2 numbers
+
+ans-> #!/bin/bash
+
+     -if [ "$1" = "like" ]
+     -then
+     - echo "hey please $1 this post"
+     -else
+     - echo "OK,comment"
+     -fi
+
+
