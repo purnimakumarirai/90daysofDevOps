@@ -12,7 +12,44 @@ Advanced Linux Shell Scripting for DevOps Engineers with User management
 -do
 -echo "$i"
 -done
+-./loop.sh day 1 90
+
+2.Create a Script to backup all your work done till now.
+-nano backup.sh 
+- #!/bin/bash
+- #!/bin/bash
+- Backup_d="/home/purnima/90daysofdevops/*"
+- Backup="/home/purnima/Backupfolder"
+- date=$(date +"%d-%b-%Y")
+- mkdir $Backup/$date
+-cp -r $Backup_d $Backup/$date
+- echo "Backup created in $Backup/$date"
+
+3.Read About Cron and Crontab, to automate the backup Script
+
+-Cron is the system's main scheduler for running jobs or tasks unattended. A command called crontab allows the user to submit, edit or delete entries to cron. A crontab file is a user file that holds the scheduling information.
+-The first step in making the crontab script is to issue the crontab-e command. This opens an empty file where you can make the entries that are submitted to the cron script for execution 
+|-----------------------------------------------------------------------|
+| min hr day/mo mo/yr day/wk       shell command                        |
+| 0   2    *     *       1         backup -0 -uf /dev/rmt0.1 /home/plan.|
+|-----------------------------------------------------------------------|
+
+4.Read about User Management
+
+-User management refers to the process of creating, modifying, and deleting user accounts on a computer system or network.
+-User Administration is the process of managing different user accounts and their respective permissions in an operating system
+
+-User account management is one of the many challenges of Linux system administrators. Some of the responsibilities of a system administrator are enabling/disabling user accounts, preserving the home directory, setting user permissions, assigning groups/shells to users, and managing passwords
+
+5.Create 2 users and just display their Usernames
+
+-sudo vim users.txt
+-ravi:12345
+-sastri:54321
+-admin:/home/ravi:/bin/bash
+-admin:/homr/sastri:/bin/bash
+-cat users.txt
+-sudo chmod 777 users.txt
 
 
-2.
 
