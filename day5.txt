@@ -1,3 +1,18 @@
 -------------------------------------------------------------------------
 Advanced Linux Shell Scripting for DevOps Engineers with User management
 -------------------------------------------------------------------------
+
+1.You have to do the same using Shell Script i.e using either Loops or command with start day and end day variables using arguments -
+
+-nano loop.sh
+
+-#!/bin/bash
+
+-for ((i=0; i<90; i++))
+-do
+-echo "$i"
+-done
+
+
+2.
+
