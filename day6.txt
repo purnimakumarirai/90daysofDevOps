@@ -1,0 +1,34 @@
+--------------------------------------------------
+File Permissions and Access Control Lists.       |
+--------------------------------------------------
+1.Create a simple file and do ls -ltr to see the details of the files 
+
+-> touch permission.txt
+-> ls -ltr
+->-rw-r--r--  o/p--> owner   —   The owner of the file or  application.
+                 --> group   —   The group that owns the file or application
+                 --> others  —   All users with access to the system. (outised the users are in a group)
+                 
+2.Write an article about File Permissions based on your understanding from the notes.
+
+->File permissions are core to the security model used by Linux systems. 
+  They determine who can access files and directories on a system and how                 
+    
+->  rw- The first set of permissions applies to the owner of the file.
+->  r-- The second set of permissions applies to the user group that owns the file.
+->  r--The third set of permissions is generally referred to as "others." All Linux files belong to an owner and a group.             
+
+->When Linux file permissions are represented by numbers, it's called numeric mode. In numeric mode, 
+a three-digit value represents specific file permissions (for example, 744.) These are called octal values
+r (read): 4
+w (write): 2
+x (execute): 1
+
+->  Owner: rwx = 4+2+1 = 7
+    Group: r-- = 4+0+0 = 4
+    Others: r-- = 4+0+0 = 4
+The results produce the three-digit value 744.
+
+->. You can modify file and directory permissions with the chmod command, 
+which stands for "change mode." To change file permissions in numeric mode,
+you enter chmod and the octal value you desire, such as 744, alongside the file nam
