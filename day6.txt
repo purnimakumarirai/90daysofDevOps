@@ -31,4 +31,19 @@ The results produce the three-digit value 744.
 
 ->. You can modify file and directory permissions with the chmod command, 
 which stands for "change mode." To change file permissions in numeric mode,
-you enter chmod and the octal value you desire, such as 744, alongside the file nam
+you enter chmod and the octal value you desire, such as 744, alongside the file name.
+
+
+3.Read about ACL and try out the commands getfacl and setfacl
+
+->  ACL is type of situation is what Linux Access Control Lists (ACLs) were intended to resolve. 
+   ACLs allow us to apply a more specific set of permissions to a file or directory without (necessarily)          changing the base ownership and permissions. They let us "tack on" access for other users or groups.
+   
+->setfacl command is used to set or modify the ACL of any file or directory, 
+ and getfacl command is used to view the ACL of any file or directory   
+
+   -getfacl displays the comment header, base ACL (access control list) entries, and extended ACL entries, if       there are any, for each file that is specified. 
+   
+   -setfacl sets (replaces), modifies, or removes the access control list (ACL) to regular files and directories. It also updates and deletes ACL entries for each file and directory that was specified by path
+
+
