@@ -1,4 +1,62 @@
 |-------------------------------------------------|
 |   Understanding package manager and systemctl   |
 |-------------------------------------------------|
+TASK
+1. You have to install docker and jenkins in your system from your terminal using package managers
+
+note:Docker is an open-source platform for building, deploying, and managing containerized apps. Jenkins is part of the service products that can run on Docker.
+
+-Mac has two types of chips, so download the Docker According to your Mac chip.
+-Step 1: Open the installer by double-clicking Docker.dmg, then drag the Docker icon to the Applications folder.
+-Step 2: To launch Docker, double-click Docker.app in the Applications folder.
+-Step 3: It will Ask for your Mac password to install it. Enter your password and click on Install helper.
+-
+Jenkins is an open-source, cross-platform automation server that is used to build, test and deploy software. It simplifies and accelerates Continuous Integration/Continuous Delivery (CI/CD) environments by creating jobs, scripts, and pipelines. The application is primarily written in Java and requires a specific version of the Java Runtime Environment (JRE). 
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+Method 1: Install Jenkins Using the Homebrew Package Manager
+--------------------------------------------------------------
+-Step 1: Install Homebrew
+-> brew --version #command
+
+-Step 2: Check if Java is Installed
+-> java -version
+
+-Step 3: Install Jenkins
+-> brew install jenkins-lts
+
+-Step 4: Start the Jenkins Server
+-> brew services start jenkins-lts
+
+-Step 5: Unlock Jenkins
+-> cat /Users/[user]/.jenkins/secrets/initialAdminPassword
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+Method 2: Install Jenkins Using Docker
+-----------------------------------------------
+
+-Step 1: Install Docker on Mac
+->Intel or Apple Silicon.
+-Step 2: Install Jenkins
+-> docker run -p 8080:8080 -p 50000:50000 -v ~/jenkins_home:/var/jenkins_home jenkins/jenkins:lts. #command
+-Step 3: Unlock and Run Jenkins
+
+-----------------------------------------------------------------------------------------
+
+Tasks
+
+1.check the status of docker service in your system (make sure you completed above tasks, else docker won't be installed)
+-> sudo docker ps -a
+
+
+2.stop the service jenkins and post before and after screenshots
+-brew services stop jenkins-lts
+
+3.read about the commands systemctl vs service
+--systemctl is the systemd command for controlling how services start on a Linux system
+-SystemD continues to run as a daemon process after the initialization is completed
+
+
+
 
