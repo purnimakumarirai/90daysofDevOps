@@ -6,17 +6,49 @@
 
 1. What is Git?
 ans- 
+
 Git is a DevOps tool used for source code management. 
 It is a free and open-source version control system used to handle small to very large projects efficiently. 
 Git is used to tracking changes in the source code, enabling multiple developers to work together on non-linear development.
 
 Features of Git
 
-Tracks history
-Free and open source
-Supports non-linear development
-Creates backups
-Scalable
-Supports collaboration
-Branching is easier
-Distributed development
+-Tracks history 
+
+-Free and open source
+
+-Supports non-linear development
+
+-Creates backups
+
+-Scalable
+
+-Supports collaboration
+
+-Branching is easier
+
+-Distributed development
+
+
+2.What is Github?
+
+-GitHub is where over 100 million developers shape the future of software, together. Contribute to the open source community
+
+-GitHub is an online software development platform. It's used for storing, tracking, and collaborating on software projects.
+- It is a subsidiary of Microsoft, and it offers all of the distributed version control and source code management (SCM) functionality of Git as well as adding its own features. 
+-GitHub is a very popular platform for developers to share and collaborate on projects, and it is also used for hosting open-source projects.
+
+
+3.What is Version Control? How many types of version controls we have?
+
+-Version control is a system that tracks changes to a file or set of files over time so that you can recall specific versions later. It allows you to revert files back to a previous state, revert the entire project back to a previous state, compare changes over time, see who last modified something that might be causing a problem, who introduced an issue and when, and more.
+
+There are two main types of version control systems: centralized version control systems and distributed version control systems.
+
+A centralized version control system (CVCS) uses a central server to store all the versions of a project's files. Developers "check out" files from the central server, make changes, and then "check in" the updated files. Examples of CVCS include Subversion and Perforce.
+
+A distributed version control system (DVCS) allows developers to "clone" an entire repository, including the entire version history of the project. This means that they have a complete local copy of the repository, including all branches and past versions. Developers can work independently and then later merge their changes back into the main repository. Examples of DVCS include Git, Mercurial, and Darcs.
+
+4.Why we use distributed version control over centralized version control?
+
+-Unlike a centralized version control system, a distributed version control doesn't have a single point of failure, because developers clone repositories on their distributed version control workstations, creating multiple backup copies.
