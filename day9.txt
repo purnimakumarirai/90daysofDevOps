@@ -2,7 +2,10 @@
 | Deep Dive in Git & GitHub for DevOps Engineers. |
 ---------------------------------------------------
 
-What is Git and why is it important?
+1.What is Git and why is it important?
+
+-( Git ) Global Information Tracker
+
 What is difference Between Main Branch and Master Branch??
 Can you explain the difference between Git and GitHub?
 How do you create a new repository on GitHub?
