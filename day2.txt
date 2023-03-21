@@ -10,3 +10,44 @@
 |   mkdir -p  A/B/C/D              # make a nested directory                                                 |
 |                                                                                                            |
 -------------------------------------------------------------------------------------------------------------|
+
+#90daysofdevops challenge 
+
+#day2  challenge
+
+Basic Linux Commands 
+---------------------------------------------------------------------
+#basic linux commands
+---------------------------------------------------------------------
+1. ls #->list file and directories.
+
+2. ls -l #->list the contents.
+
+3. ls -a #->list the files and directories included hidden files.
+
+4. pwd #->print present directory.
+
+5. cd #->change directory
+
+6. cd - #-> go to the last working directory.
+
+7. cd .. #->change directory to one step back.
+
+8. mkdir #-> use to make directory.
+
+9. mkdir A B C #->to make multiple directories.
+
+10. mkdir -p A/B/C/D #-> to make nested directory.
+
+11. touch filename.txt #->to make file.
+
+12. whoami #-> to know your name.
+
+13. vim #-> text editor 
+
+|--------------------------------------------------------------------|
+| mkdir newFolder        # make a new folder 'newFolder'                     |                                                       
+| mkdir .NewFolder       # make a hidden directory                          |                            
+| mkdir A B C D          #make multiple directories at the same time  |                                                                                                           
+| mkdir -p A/B/C/D       # make a nested directory                         |
+|-------------------------------------------------------------------| 
