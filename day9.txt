@@ -5,11 +5,26 @@
 1.What is Git and why is it important?
 
 -( Git ) Global Information Tracker
+-Git is a DevOps tool used for source code management. It is a free and open-source version control system used to handle small to very large projects efficiently.
+-Git is used to tracking changes in the source code, enabling multiple developers to work together on non-linear development
 
-What is difference Between Main Branch and Master Branch??
+2.What is difference Between Main Branch and Master Branch??
 
 -The main branch — the one where all changes eventually get merged back into, and is called master. This is the official working version of your project, and the one you see when you visit the project repository at github
 
-Can you explain the difference between Git and GitHub?
-How do you create a new repository on GitHub?
-What is difference between local & remote repository? How to connect local to remote?
+3.Can you explain the difference between Git and GitHub?
+
+-While Git is a tool that's used to manage multiple versions of source code edits that are then transferred to files in a Git repository,
+
+-GitHub serves as a location for uploading copies of a Git repository. In a sense, then, there's no comparison when it comes to Git vs. GitHub as far as their function.
+
+4.How do you create a new repository on GitHub?
+-Create a new repository on GitHub.com. ...
+-Open TerminalTerminalGit Bash.
+-Change the current working directory to your local project.
+-Use the init command to initialize the local directory as a Git repository. ...
+-Add the files in your new local repository. ...
+-Commit the files that you've staged in your local repository.
+
+
+5.What is difference between local & remote repository? How to connect local to remote?
