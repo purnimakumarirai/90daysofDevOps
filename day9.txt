@@ -7,6 +7,9 @@
 -( Git ) Global Information Tracker
 
 What is difference Between Main Branch and Master Branch??
+
+-The main branch — the one where all changes eventually get merged back into, and is called master. This is the official working version of your project, and the one you see when you visit the project repository at github
+
 Can you explain the difference between Git and GitHub?
 How do you create a new repository on GitHub?
 What is difference between local & remote repository? How to connect local to remote?
