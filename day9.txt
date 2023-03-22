@@ -28,3 +28,20 @@
 
 
 5.What is difference between local & remote repository? How to connect local to remote?
+
+-Local repositories reside on the computers of team members.  
+-remote repositories are hosted on a server that is accessible for all team members - most likely on the internet or on a local network.
+
+
+#TASK
+
+1.Set your user name and email address, which will be associated with your commits.
+
+-git config --global user.name "example"
+-git config --global user.email "example.@gmail.com"
+-git config --list
+
+2.Create a repository named "Devops" on GitHub
+-Connect your local repository to the repository on GitHub.
+-Create a new file in Devops/Git/Day-02.txt & add some content to it
+-Push your local commits to the repository on GitHub
