@@ -41,12 +41,18 @@
 -git config --global user.email "example.@gmail.com"
 -git config --list
 
-2.Create a repository named "Devops" on GitHub
-
+2.
+->Create a repository named "Devops" on GitHub
 ->Connect your local repository to the repository on GitHub.
--->
-
 ->Create a new file in Devops/Git/Day-02.txt & add some content to it
-
 ->Push your local commits to the repository on GitHub
---> git push --all origin
+
+  -->  mkdir Devops
+  -->  touch Day-02.txt
+  -->  git status
+  -->  git add Day-02.txt
+  -->  git status
+  -->  git commit -m "finnaly adding files"
+  -->  git status
+  -->  git push --all origin
+
