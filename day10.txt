@@ -1,10 +1,26 @@
 1.Git Branching 
 
+-Branch in Git is similar to the branch of a tree. Analogically, a tree branch is attached to the central part of the tree called the trunk. While branches can generate and fall off, the trunk remains compact and is the only part by which we can say the tree is alive and standing. Similarly, a branch in Git is a way to keep developing and coding a new feature or modification to the software and still not affecting the main part of the project. We can also say that branches create another line of development in the project. The primary or default branch in Git is the master branch (similar to a trunk of the tree). As soon as the repository creates, so does the main branch (or the default branch).
+
+
 2.Git Revert and Reset
+
+-git revert is used to remove the commits from the remote repository. 
+-git revert <commit id of the commit that needs to be removed>
+
+-git reset is used when we want to unstage a file and bring our changes back to the working directory.
+-git reset can also be used to remove commits from the local repository.
+-git reset HEAD <filename> #command
+
 
 3.Git Rebase and Merge
 
+-rebase flattens the history, removing unwanted entries. 
+-Git merge, only changes the target branch and creates a commit, preserving the history of the source branch
+
+
 4.What Is Git Rebase?
+-
 
 5.What Is Git Merge?
 
