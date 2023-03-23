@@ -48,6 +48,7 @@ swithch to dev branch ( Make sure your commit message will reflect as "Added new
 
 -version01.txt should reflect at local repo first followed by Remote repo for review.
 [Hint use your knowledge of Git push and git pull commands here]
+
 Add new commit in dev branch after adding below mentioned content in Devops/Git/version01.txt: While writing the file make sure you write these lines
 
 -1st line>> This is the bug fix in development branch
@@ -65,6 +66,7 @@ Add new commit in dev branch after adding below mentioned content in Devops/Git/
 -Restore the file to a previous version where the content should be “This is the bug fix in development branch” 
 [Hint use git revert or reset according to your knowledge]
 
+--------------------------------------------------------------------------------------------------------------------------------------
 Task 2:
 
 Demonstrate the concept of branches with 2 or more branches with screenshot.
