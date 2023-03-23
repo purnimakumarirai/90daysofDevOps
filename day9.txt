@@ -49,6 +49,7 @@
 
   -->  mkdir Devops
   -->  touch Day-02.txt
+  -->  git remote add origin <REMOTE_URL>
   -->  git status
   -->  git add Day-02.txt
   -->  git status
