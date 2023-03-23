@@ -20,16 +20,31 @@
 
 
 4.What Is Git Rebase?
--
+- Rebasing is the process of moving or combining a sequence of commits to a new base commit.
+- Rebasing is most useful and easily visualized in the context of a feature branching workflow.
 
 5.What Is Git Merge?
-
+- Merging is Git's way of putting a forked history back together again.
+- The git merge command lets you take the independent lines of development created by git branch and integrate them into a single branch.
+------------------------------------------------------------------------------------------------------------------------------------------------------
 #Task 1:
 
 -Add a text file called version01.txt inside the Devops/Git/ with “This is first feature of our application” written inside.
 This should be in a branch coming from master, [hint try git checkout -b dev],
 swithch to dev branch ( Make sure your commit message will reflect as "Added new feature").
 [Hint use your knowledge of creating branches and Git commit command]
+----------------------------------------------------------------------------------------------
+- mkdir devops
+- cd devops
+- touch version01.txt
+- vim version01.txt 
+- “This is first feature of our application” #in vim insert i command
+- cat version01.txt
+- git checkout -b dev
+- git commit -m "added new feature"
+- git add version01.txt
+- git status
+- git push --all origin
 
 -version01.txt should reflect at local repo first followed by Remote repo for review.
 [Hint use your knowledge of Git push and git pull commands here]
