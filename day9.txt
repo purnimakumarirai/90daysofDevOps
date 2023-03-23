@@ -56,4 +56,21 @@
   -->  git commit -m "finnaly adding files"
   -->  git status
   -->  git push --all origin
+  
+  ---------------------------------------------------------------------------------
+  
+  #GitHub Error: Authentication Failed from the Command Line
+After setting up 2 Factor Authentication on GitHub, 
+When I tried to push a remote repo, the command line threw this error:
+-> git push origin my-branch
+->Username for 'https://github.com': myusername
+->Password for 'https://myusername@github.com': mypassword
+->remote: Invalid username or password.
+->fatal: Authentication failed for 'https://github.com/my-repository’
+
+-->Go to Settings:
+-->Then Developer Settings:
+-->Then Personal access tokens >> Tokens (classic):
+-->Generate a new Personal Access Token (also classic). 
+-->Paste the Personal Access Token into the “Password” field when you authenticate via the command line.
 
