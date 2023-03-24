@@ -68,6 +68,11 @@ Add new commit in dev branch after adding below mentioned content in Devops/Git/
 -Restore the file to a previous version where the content should be “This is the bug fix in development branch” 
 [Hint use git revert or reset according to your knowledge]
 
+-mkdir github
+-cd github
+-clone<your git url>
+
+
 --------------------------------------------------------------------------------------------------------------------------------------
 Task 2:
 
