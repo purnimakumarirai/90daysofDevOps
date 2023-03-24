@@ -40,6 +40,8 @@ swithch to dev branch ( Make sure your commit message will reflect as "Added new
 - vim version01.txt 
 - “This is first feature of our application” #in vim insert i command
 - cat version01.txt
+- git init
+- git status
 - git checkout -b dev
 - git commit -m "added new feature"
 - git add version01.txt
