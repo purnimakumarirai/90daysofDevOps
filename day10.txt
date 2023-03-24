@@ -71,11 +71,17 @@ Add new commit in dev branch after adding below mentioned content in Devops/Git/
 -mkdir github
 -cd github
 -clone<your git url>
-
+-git status
+-touch demo.txt
+-vim"added feature in development branch"
+-cd demo.txt
+-git add demo.txt
+-git commit -m " added feature is added"
+-git push --all origin
 
 --------------------------------------------------------------------------------------------------------------------------------------
 Task 2:
 
-Demonstrate the concept of branches with 2 or more branches with screenshot.
-add some changes to dev branch and merge that branch in master
-as a practice try git rebase too, see what difference you get.
+-Demonstrate the concept of branches with 2 or more branches with screenshot.
+-Git branches are commonly used when there's a new feature, bug fix, or anything else in your code you might want to track and compare to previous versions. This helps to identify and track instances where something goes wrong with a bug fix or a new feature release.
+
