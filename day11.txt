@@ -1,1 +1,93 @@
 
+Advance Git & GitHub for DevOps Engineers: Part-2
+---------------------------------------------------
+
+-WHAT IS Git Stash
+-Git stash is a built-in command with the distributed Version control tool in Git that locally stores all the most recent changes in a workspace and resets the state of the workspace to the prior commit state.
+-Git stash is a command that allows you to temporarily save changes you have made in your working directory, without committing them. 
+
+-what is Cherry-pick:
+-Cherry picking is the act of picking a commit from a branch and applying it to another
+-Git cherry-pick copies the changes from one or more source branch commits to a target branch.
+
+1task-
+
+
+Create a new branch and make some changes to it.
+- git cheakout -b dev1
+-Use git stash to save the changes without committing them.
+-git stash
+-Save changes to branch A.
+-Run git stash .
+-Check out branch B.
+-Fix the bug in branch B.
+-Commit and (optionally) push to remote.
+-Check out branch A.
+-Run git stash pop to get your stashed changes back.
+
+Switch to a different branch, make some changes and commit them.
+-git checkout -b dev2
+
+Use git stash pop to bring the changes back and apply them on top of the new commits.
+-The git stash pop command helps us to remove or throw away the latest or the topmost stash. The stash pop command will take the content from the stash file and then apply those changes to our current working file
+-git stash pop
+------------------------------------------------------------------------------------
+
+TASK2
+-In version01.txt of development branch add below lines after “This is the bug fix in development branch” that you added in Day10 and reverted to this commit.
+In version01.txt of development branch add below lines after “This is the bug fix in development branch” that you added in Day10 and reverted to this commit.
+
+Line2>> After bug fixing, this is the new feature with minor alteration”
+
+Commit this with message “ Added feature2.1 in development branch”
+
+-->-mkdir github
+-cd github
+-clone<your git url>
+-git status
+-git branch
+-git checkout -b dev
+-touch demo.txt
+-vim"After bug fixing, this is the new feature with minor alteration”
+-cd demo.txt
+-git add demo.txt
+-git commit -m " Added feature2.1 in development branch"
+-git push --all origin
+
+
+Line3>> This is the advancement of previous feature
+
+Commit this with message “ Added feature2.2 in development branch”
+
+-->-mkdir github
+-cd github
+-clone<your git url>
+-git status
+-git branch
+-git checkout -b dev
+-touch demo.txt
+-vim"his is the advancement of previous feature”
+-cd demo.txt
+-git add demo.txt
+-git commit -m " Added feature2.2 in development branch"
+-git push --all origin
+
+
+Line4>> Feature 2 is completed and ready for release
+
+Commit this with message “ Feature2 completed”
+-->-mkdir github
+-cd github
+-clone<your git url>
+-git status
+-git branch
+-git checkout -b dev
+-touch demo.txt
+-vim"Feature 2 is completed and ready for release"
+-cd demo.txt
+-git add demo.txt
+-git commit -m "Feature2 completed"
+-git push --all origin
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
