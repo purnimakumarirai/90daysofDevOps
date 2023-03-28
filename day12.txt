@@ -2,3 +2,136 @@ Finally!!
 
 GITHUB & GIT CHEATSHEET
 -------------------------------------------------------------------------------------------------------------------------------------------------------
+#INSTALLATION
+
+-GitHub for Windows
+-https://windows.github.com
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-GitHub for Mac
+-https://mac.github.com
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+#SETUP
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+Configuring user information used across all local repositories
+
+-git config --global user.name “[firstname lastname]” 
+->set a name that is identifiable for credit when review version history
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-git config --global user.email “[valid-email]”
+->set an email address that will be associated with each history marker
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+#SETUP & INIT
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+Configuring user information, initializing and cloning repositories
+-git init
+->initialize an existing directory as a Git repository
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-git clone [url]
+->retrieve an entire repository from a hosted location via URL
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+#STAGE & SNAPSHOT
+Working with snapshots and the Git staging area
+-git status
+->show modified files in working directory, staged for your next commit
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-git add [file]
+->add a file as it looks now to your next commit (stage)
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-git reset [file]
+->unstage a file while retaining the changes in working directory
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-git diff
+->diff of what is changed but not staged
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-git commit -m “[descriptive message]”
+-commit your staged content as a new commit snapshot
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+#BRANCH & MERGE
+Isolating work in branches, changing context, and integrating changes
+-git branch
+->list your branches will appear next to the currently active branch
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-git branch [branch-name]
+->create a new branch 
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-git checkout -b <branch_name>
+->Create a local branch and switch to that branch
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-git push -u origin <branch_name>
+->Push in the local branch
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+#Git Checkout Branch
+-git checkout -b  <branch_name>
+------------------------------------------------------------------------------------------------------------------------------------------------------
+-git checkout
+->switch to another branch 
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-git merge [branch]
+->merge the specified branch’s history into the current one
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-git log
+->show all commits in the current branch’s history
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+#UNDOING CHANGES
+-git revert<commit>
+->Create new commit that undoes all of the changes made in commit.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+#GIT Status
+-git status
+->git status is mainly used to display the state of the staging area and the repository. 
+It helps us to track all the changes made, point out untracked files.
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-git commit -m "Commit message"
+->he -m along with the command lets us write the commit message on the command line
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-git rm
+->rm stands for remove. It is used to remove a collection of files. 
+The git rm command is used to remove or delete files from the working tree and index.
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+#git merge 
+-git merge <branch_name>
+->the command git merge is used to merge the branches.
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+#git rebase
+-git rebase <branch_name>
+->Git Rebase is a process of combining a sequence of commits to a new base commit.
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+#Git Fetch
+-git fetch <branch_name>
+->Git Fetch only downloads the latest changes into the local repository.
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+#Git Pull Remote Branch
+-git pull
+-> pull a remote repository by using the git pull command. 
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+#Git Stash
+-git stash
+->The git stash command is used to record the current state of the working directory and index in a stash.
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+#git cherry-pick
+-git cherry-pick <commit_id
+->Choosing a commit from one branch and applying it to another is known as cherry picking in Git.
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
