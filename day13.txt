@@ -1,0 +1,27 @@
+|------------------------------------------------------------------------------------------------|
+| Basics of Python as this is also important for Devops Engineer to build the logic and Programs.|
+|------------------------------------------------------------------------------------------------|
+
+
+1.What is python?
+
+-Python is a computer programming language often used to build websites and software, automate tasks, and conduct data analysis. 
+
+-Python is an interpreted, object-oriented,general-purpose language, high-level programming language with dynamic semantics developed by Guido van Rossum
+
+-Python is that it is easy to learn and fun to use
+
+#Installation on system
+
+-Go to Python.org 
+-click on the Download button to download the latest version for MacOS. 
+-Go to your download folder and double-click on the python-<version>-macosx.
+-pkg file to start the Python installer. 
+
+#Intallation on Terminal
+
+-Open the terminal and enter the following command to upgrade homebrew:
+-$ brew update && brew upgrade.
+-Once done, install python using this command:
+-brew install python3.
+-This should complete the installation of python on your machine.
