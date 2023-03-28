@@ -2,4 +2,44 @@
 |    Python Data Types and Data Structures for DevOps     |
 -----------------------------------------------------------
 
-#Data Types
+#Data Types 
+
+-Python Data Types are used to define the type of a variable. 
+-It defines what type of data we are going to store in a variable.
+-The data stored in memory can be of many types.
+-For example, a person's age is stored as a numeric value and his or her address is stored as alphanumeric characters.
+-Data types are the classification or categorization of data items.
+-It represents the kind of value that tells what operations can be performed on a particular data. 
+
+The following are the standard or built-in data types in Python:
+-Numeric
+-Sequence Type
+-Boolean
+-Set
+-Dictionary
+-Binary Types
+
+ #Data Sructure
+ -Data Structures are a way of organizing data so that it can be accessed more efficiently depending upon the situation. 
+ -Data Structures are fundamentals of any programming language around which a program is built.
+ 
+ #Tasks
+
+1.Give the Difference between List, Tuple and set. Do Handson and put screenshots as per your understanding.
+-
+
+2.Create below Dictionary and use Dictionary methods to print your favourite tool just by using the keys of the Dictionary.
+fav_tools = 
+{ 
+  1:"Linux", 
+  2:"Git", 
+  3:"Docker", 
+  4:"Kubernetes", 
+  5:"Terraform", 
+  6:"Ansible", 
+  7:"Chef"
+}
+
+3.Create a List of cloud service providers eg.
+-cloud_providers = ["AWS","GCP","Azure"]
+
