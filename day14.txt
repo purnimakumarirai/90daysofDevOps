@@ -22,37 +22,37 @@ The following are the standard or built-in data types in Python:
  #Data Sructure
  -Data Structures are a way of organizing data so that it can be accessed more efficiently depending upon the situation. 
  -Data Structures are fundamentals of any programming language around which a program is built.
- 
+--------------------------------------------------------------------------------------------------------------------------------------------------------- 
  #Tasks
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------
 1.Give the Difference between List, Tuple and set. Do Handson and put screenshots as per your understanding.
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------
 #LIST
 
 -The list is a datatype available in Python which can be written as a list of comma-separated values (items) between square brackets.
 -List are mutable .i.e it can be converted into another data type and can store any data element in it.
 -List can store any type of element.
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------
 #TUPLES
 
 -Tuple: Tuple is a collection of Python objects much like a list.
 -The sequence of values stored in a tuple can be of any type, and they are indexed by integers.
 -Values of a tuple are syntactically separated by ‘commas’
 -uple by closing the sequence of values in parentheses.
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------
 #SET
 
 -Sets are an unordered collection of elements or unintended collection of items In python.
 -Here the order in which the elements are added into the set is not fixed, it can change frequently.
 -It is defined under curly braces{}
 -Sets are mutable, however, only immutable objects can be stored in it.
-                    
+---------------------------------------------------------------------------------------------------------------------------------------------------------                    
 | -Lists is Mutable	                 | -Set is Mutable	                     | -Tuple is Immutable
 | -It is Ordered collection of items	| -It is Unordered collection of items	| -It is Ordered collection of items
 | -Items in list can be              |                                      |
 | replaced or changed	               | -Items in set cannot be changed or   | -replaced	Items in tuple 
 |                                    |                                      | cannot be changed or replaced
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------
 
 2.Create below Dictionary and use Dictionary methods to print your favourite tool just by using the keys of the Dictionary.
 fav_tools = 
@@ -65,7 +65,32 @@ fav_tools =
   6:"Ansible", 
   7:"Chef"
 }
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+1) Open terminal 
+2) python.3
+3) fav_tools = { 
+                1:"Linux", 
+                2:"Git", 
+                3:"Docker", 
+                4:"Kubernetes", 
+                5:"Terraform", 
+                6:"Ansible", 
+                7:"Chef"
+                }
+4)for keys, value in fav_tool.items():
+        print(value)
+o/p-> 
+Linux
+Git
+Docker
+Kubernetes
+Terraform
+Ansible
+Chef       
+        
+ ---------------------------------------------------------------------------------------------------------------------------------------------------------       
 
 3.Create a List of cloud service providers eg.
 -cloud_providers = ["AWS","GCP","Azure"]
+-Write a program to add Digital Ocean to the list of cloud_providers and sort the list in alphabetical order.
 
