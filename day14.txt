@@ -91,6 +91,18 @@ Chef
  ---------------------------------------------------------------------------------------------------------------------------------------------------------       
 
 3.Create a List of cloud service providers eg.
--cloud_providers = ["AWS","GCP","Azure"]
+cloud_providers = ["AWS","GCP","Azure"]
 -Write a program to add Digital Ocean to the list of cloud_providers and sort the list in alphabetical order.
+---------------------------------------------------------------------------------------------------------------------------------------------------------     
+-cloud_providers = ["AWS","GCP","Azure"]
+-print (cloud_providers)
 
+-o/p:-['AWS', 'GCP', 'Azure']
+---------------------------------------------------------------------------------------------------------------------------------------------------------     
+-cloud_providers = ["AWS","GCP","Azure"]
+-cloud_providers.append("Digital Ocean")
+-cloud_providers.sort()
+-print (cloud_providers)
+
+-o/p:-['AWS', 'Azure', 'Digital Ocean', 'GCP']
+---------------------------------------------------------------------------------------------------------------------------------------------------------     
