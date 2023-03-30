@@ -2,4 +2,31 @@ Day 15 Task: Python Libraries for DevOps
 
 Reading JSON and YAML in Python
 
+-JavaScript Object Notation (JSON) is a standardized format commonly used to transfer data as text that can be sent over a network.
+-It's used by lots of APIs and Databases, and it's easy for both humans and machines to read.
+-JSON represents objects as name/value pairs, just like a Python dictionary.
 
+-YAML is a human-readable data serialization language that is often used for writing configuration files.
+-Depending on whom you ask, YAML stands for yet another markup language or YAML ain't markup language (a recursive acronym),
+-which emphasizes that YAML is for data, not documents.
+
+#Tasks
+
+1.Create a Dictionary in Python and write it to a json File.
+- import json
+-     dictionary={
+- "aws" : "ec2",
+- "azure":"VM",
+- "gcp":"computer engine",
+- }
+- json_object=json.dumps(dictionary, indent = 4)
+- print(json_object)
+
+2.Read a json file services.json kept in this folder and print the service names of every cloud service provider.
+
+output
+aws : ec2
+azure : VM
+gcp : compute engine
+
+3.Read YAML file using python, file services.yaml and read the contents to convert yaml to json
