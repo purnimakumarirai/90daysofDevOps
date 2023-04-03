@@ -2,12 +2,17 @@
 |  Day 17 Task: Docker Project for DevOps Engineers.   |
 |------------------------------------------------------|
 
+#Docker
+-Docker is a software platform that allows you to build, test, and deploy applications quickly
+-Fast deployment, ease of creating new instances, and faster migrations
+-Docker provides the ability to package and run an application in a loosely isolated environment called a container.
+-The isolation and security allows you to run many containers simultaneously on a given host.
+-Containers are lightweight and contain everything needed to run the application
 
-
-
-
-
-
+ #Dockerfile
+ -A Dockerfile is a script that automatically creates containers on the Docker platform. 
+ -A Dockerfile is basically a text document that contains all the commands a user could call on the command line to assemble an image.
+ -A Dockerfile is a script that uses the Docker platform to generate containers automatically
 
 
 
@@ -15,9 +20,28 @@
 #task:
 
 1.Create a Dockerfile for a simple web application (e.g. a Node.js or Python app)
+i). intall Docker
+ii). open terminal
+iii). mkdit Dockertest
+iv). cd Dockertest
+v). touch Dockerfile
+vi). vim Dockerfile
+  vi(a). #getting base image
+         FROM ubuntu
+
+         RUN apt-get update
+
+         CMD ["echo", "Hello World..!this is my first docker image"]
+   
+         
 
 2.Build the image using the Dockerfile and run the container
+i). docker build -t myimage1:1.0 .  
+ii). docker images
+iii). docker run <image ID>
+
 
 3.Verify that the application is working as expected by accessing it in a web browser
+i). docker 
 
 4.Push the image to a public or private repository (e.g. Docker Hub )
