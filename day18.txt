@@ -1,1 +1,48 @@
+-----------------------------------------------------
+Day 18 Task: Docker for DevOps Engineers
+-----------------------------------------------------
 
+#Docker Compose
+-Docker Compose is a tool that was developed to help define and share multi-container applications.
+-With Compose, we can create a YAML file to define the services and with a single command, can spin everything up or tear it all down.
+
+#What is YAML?
+i). YAML stands for yet another markup language 
+ii). YAML is a human-readable data serialization language that is often used for writing configuration files
+iii). YAML is a popular programming language because it is designed to be easy to read and understand. 
+iv). It can also be used in conjunction with other programming languages. Because of its flexibility and accessibility, YAML is used by the Ansible automation tool to create automation processes
+v). YAML files use a .yml or .yaml extension, and follow specific syntax rules. 
+vi). A common question for YAML beginners is “What do the 3 dashes mean?” 3 dashes (---) are used to signal the start of a document, while each document ends with three dots (...).  
+
+
+
+Task-1
+1). Learn how to use the docker-compose.yml file, to set up the environment, 
+configure the services and links between different containers, 
+and also to use environment variables in the docker-compose.yml file.
+------------------------------------------------------------------------------------------------------
+1)Install docker-compose
+2)Create a docker-compose.yml file inside project folder
+
+-version: "3.3" denotes that we are using version 3.3 of Docker Compose.
+-The services section defines all the different containers we will create.
+-The build keyword specifies the location of our Dockerfile, and . represents the directory where the docker-compose.yml file is located.
+-The image keyword is used to specify the image from docker hub for mysql containers
+-For the database and web, we are using the ports keyword to mention the ports that need to be exposed.
+And then, we also specify the environment variables for mysql which are required to run mysql.
+
+i). vim docker-compose.yml
+ii). cat docker-compose.yml
+
+3)Run docker-compose.yml file
+iii). docker-compose up -d
+iv). docker-compose down
+
+4)docker-compose down : This command stops all the services and cleans up the containers, networks, and images.
+----------------------------------------------------------------------------------------------------
+Task-2
+1). -Pull a pre-existing Docker image from a public repository (e.g. Docker Hub) and run it on your local machine. Run the container as a non-root user (Hint- Use usermod  command to give user permission to docker). Make sure you reboot instance after giving permission to user.
+2). Inspect the container's running processes and exposed ports using the docker inspect command.
+3). Use the docker logs command to view the container's log output.
+4). Use the docker stop and docker start commands to stop and start the container.
+5). Use the docker rm command to remove the container when you're done.
