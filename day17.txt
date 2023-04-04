@@ -45,3 +45,23 @@ iii). docker run <image ID>
 i). docker 
 
 4.Push the image to a public or private repository (e.g. Docker Hub )
+i). intall Docker
+ii). open terminal
+iii). mkdit Dockertest
+iv). cd Dockertest
+v). touch Dockerfile
+vi). vim Dockerfile
+  vi(a). #getting base image
+         FROM ubuntu
+
+         RUN apt-get update
+
+         CMD ["echo", "Hello World..!this is my first docker image"]
+vii).   docker build -t myimage1:1.0 .  
+viii). docker images
+ix). docker run <image ID>       
+x). docker login <USERNAME OF DOCKER HUB>
+xi). docker tag <reponame> <USERMANE>/<IMAGENAME>
+xii). docker push <USERNAME>/<IMAGENAME>
+#pushed
+
