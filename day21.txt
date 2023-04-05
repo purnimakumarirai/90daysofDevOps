@@ -1,0 +1,28 @@
+Day 21 Task: Docker Important interview Questions.
+
+#Docker Interview
+#Questions
+1 .What is the Difference between an Image, Container and Engine?
+2. What is the Difference between the Docker command COPY vs ADD?
+3. What is the Difference between the Docker command CMD vs RUN?
+4. How Will you reduce the size of the Docker image?
+5. Why and when to use Docker?
+6. Explain the Docker components and how they interact with each other.
+7. Explain the terminology: Docker Compose, Docker File, Docker Image, Docker Container?
+8. In what real scenarios have you used Docker?
+9. Docker vs Hypervisor?
+10. What are the advantages and disadvantages of using docker?
+11. What is a Docker namespace?
+12. What is a Docker registry?
+13. What is an entry point?
+14. How to implement CI/CD in Docker?
+15. Will data on the container be lost when the docker container exits?
+16. vWhat is a Docker swarm?
+17. What are the docker commands for the following:
+       view running containers
+---------command to run the container under a specific name
+---------command to export a docker
+---------command to import an already existing docker image
+---------commands to delete a container
+---------command to remove all stopped containers, unused networks, build caches, and dangling images?
+18. What are the common docker practices to reduce the size of Docker Image?
