@@ -1,1 +1,28 @@
 
+------------------------------------------
+Day 19 Task: Docker for DevOps Engineers
+------------------------------------------
+--------------------------------------------------------------------------------------------------------------------
+#Docker-Volume
+
+--------------------------------------------------------------------------------------------------------------------
+
+#Docker Network
+--------------------------------------------------------------------------------------------------------------------
+#Task-1
+
+i). Create a multi-container docker-compose file which will bring UP and bring DOWN containers in a single shot 
+(Example - Create application and database container)
+
+--------------------------------------------------------------------------------------------------------------------
+
+#Task-2
+
+i). Learn how to use Docker Volumes and Named Volumes to share files and directories between multiple containers. 
+
+ii). Create two or more containers that read and write data to the same volume using the docker run --mount command.
+
+iii). Verify that the data is the same in all containers by using the docker exec command to run commands inside each container.
+
+iv). Use the docker volume ls command to list all volumes and docker volume rm command to remove the volume when you're done.
+--------------------------------------------------------------------------------------------------------------------
