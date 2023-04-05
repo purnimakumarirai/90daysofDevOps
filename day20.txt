@@ -1,0 +1,89 @@
+Finally!! #DOCKER COMPLETED
+
+put your knowledge and creativity to the test and create a cheat-sheet that truly stands out! 🚀
+--------------------------------------------------------------------------------------------------
+1. Installation of Docker
+
+-For Windows	-This command helps you to install Docker on windows.-	https://download.docker.com/win/stable/InstallDocker.msi
+-For Linux	-This command helps you to install Docker on Linux.	-curl -sSL https://get.docker.com/ | sh
+-For mac	-This command helps you to install Docker on mac os.	-https://download.docker.com/mac/stable/Docker.dmg
+
+2. Docker Registry and Repository
+	
+-docker login
+-docker login localhost:8080
+
+-docker logout
+-docker logout localhost:8080
+
+-Searching an image
+-search nginx
+
+-Pulling an Image
+-docker image pull nginx
+
+-Pushing an image
+-Pushing an image	This command can be used to push a specific image or set of images.
+
+3. Running Containers
+
+-Command to create a container 
+-docker container create -t -i eon01/infinite --name XYZ
+
+-Command to run a container 
+-docker container run -it --name XYZ -d eon01/infinite
+
+-Command for removing a container
+-docker container rm infinite
+
+4.Commands for Starting or Stopping the Container
+
+-Command for starting a container
+-docker container start nginx
+
+-Command for stopping a container
+-docker container stop nginx
+
+5.Commands for Obtaining Container Information
+
+-Fetching information From Running Container
+-docker ps
+0R
+-docker container ls
+
+6.Commands for Managing Images
+
+-Commands for listing images
+-docker image ls
+
+-Command for removing image
+-docker image rm nginx
+
+-Showing the History of an Image
+-image history
+
+7.Commands for Networking
+
+-Command for network listing
+-docker network ls
+
+-Command for Connecting a Container to a Network When it Starts
+-docker container run -it -d --network=MyOverlayNetwork nginx
+
+8.Commands for Cleaning Docker
+
+-Command for Removing a Running Container
+-docker container rm nginx
+
+-Command for Removing a Container and its Volume
+-docker container rm -v nginx
+
+-Command for Removing all Exited Containers
+-docker container rm $(docker container ls -a -f status=exited -q)
+
+-Command for Removing a Docker Image
+-docker image rm nginx
+
+-Command for Clean all
+-docker system prune -a
+--------------------------------------------------------------------------------------------------
