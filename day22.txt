@@ -1,9 +1,70 @@
 
 Getting Started with Jenkins 😃
 
-#What is Jenkins?
+#Jenkins?
 
 -Jenkins is an open source continuous integration/continuous delivery and deployment (CI/CD) automation software DevOps tool written in the Java programming language. 
 -It is used to implement CI/CD workflows, called pipelines.
+-As a Continuous Integration tool, Jenkins allows seamless, ongoing development, testing, and deployment of newly created code.
+-Continuous Integration is a process wherein developers commit changes to source code from a shared repository, and all the changes to the source code are built continuously.
 
+#task
+
+1. What you understood in Jenkin, write a small article in your own words  
+-Jenkins is an open-source automation tool written in Java with plugins built for continuous integration.
+-Jenkins is used to build and test your software projects continuously making it easier for developers to integrate changes to the project, and making it easier for users to obtain a fresh build. 
+-It also allows you to continuously deliver your software by integrating with a large number of testing and deployment technologies.
+-It is used to implement CI/CD workflows, called pipelines.
+-As a Continuous Integration tool, Jenkins allows seamless, ongoing development, testing, and deployment of newly created code.
+-Continuous Integration is a process wherein developers commit changes to source code from a shared repository, and all the changes to the source code are built continuously.
+
+2. Create a freestyle pipeline to print "Hello World!! 
+
+)Install Jenkins
+Install the latest LTS version: brew install jenkins-lts
+Install a specific LTS version: brew install jenkins-lts@YOUR_VERSION
+Start the Jenkins service: brew services start jenkins-lts
+Restart the Jenkins service: brew services restart jenkins-lts
+Update the Jenkins version: brew upgrade jenkins-lts-
+i). -brew install jenkins-lts
+
+-launchctl
+
+-brew services start jenkins-lts
+
+
+
+ii). For jenkins used port 8080 which is the default port of Jenkins, browse instance-public-IP/8080 it will open Jenkins dashboard.
+
+
+
+iii). Click on the "New Item" button on the left sidebar
+
+
+
+iv). Give your project a name, such as "demo-pipeline" and select "Freestyle project" as the project type.
+
+
+
+v). In the configuration section, scroll down to the "Build" section and add an "Execute shell" build step.
+
+
+
+vi). In the command field, enter the command to print "Hello World", such as echo "Hello World!!".
+
+
+
+vii). Click on the "Save" button at the bottom of the page to create the project.
+
+
+
+viii). Once the project is created, click on the "Build Now" link to run the project.
+
+
+
+ix). Check the console output for the "Hello World" message.
+
+
+
+thankyou for reading my blog!
 
