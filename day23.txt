@@ -26,10 +26,20 @@ Task-01
 -In the "Build" section of the project, add a build step to run the "docker build" command to build the image for the container.
 -Add a second step to run the "docker run" command to start a container using the image created in step 3.
 
+1.Log in to Jenkins and navigate to the main dashboard.
+- localhost:8080 
+2.Click on the "New Item" button to create a new project.
+(3). Select "Freestyle project" and give the project a name.
+
+(4). Click on the "OK" button to create the project.
+
+
 Task-02
 
 -Create Jenkins project to run "docker-compose up -d" command to start the multiple containers defined in the compose file (Hint- use day-19 Application & Database docker-compose file)
 -Set up a cleanup step in the Jenkins project to run "docker-compose down" command to stop and remove the containers defined in the compose file.
+
+
 
 
 
