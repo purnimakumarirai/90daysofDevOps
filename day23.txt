@@ -1,1 +1,47 @@
 Day 23 Task: Jenkins Freestyle Project for DevOps Engineers.
+
+1. #What is CI/CD?
+-The "CI" in CI/CD always refers to continuous integration, which is an automation process for developers. 
+-Successful CI means new code changes to an app are regularly built, tested, and merged to a shared repository. 
+-It’s a solution to the problem of having too many branches of an app in development at once that might conflict with each other.
+
+-The "CD" in CI/CD refers to continuous delivery and/or continuous deployment, which are related concepts that sometimes get used interchangeably. 
+-Both are about automating further stages of the pipeline, but they’re sometimes used separately to illustrate just how much automation is happening.
+
+2. #What Is a Build Job
+=Build jobs are the basic currency of a Continuous Integration server.
+-A build job is a particular way of compiling, testing, packaging, deploying or otherwise doing something with your project.
+-A Jenkins build job contains the configuration for automating a specific task or step in the application building process. These tasks include gathering dependencies, compiling, archiving, or transforming code, and testing and deploying code in different environments.
+
+-Jenkins supports several types of build jobs, such as freestyle projects, pipelines, multi-configuration projects, folders, multibranch pipelines, and organization folders.
+3. What is Freestyle Projects ?? 
+
+A freestyle project in Jenkins is a type of project that allows you to build, test, and deploy software using a variety of different options and configurations
+
+
+Task-01
+
+-create a agent for your app. ( which you deployed from docker in earlier task)
+-Create a new Jenkins freestyle project for your app.
+-In the "Build" section of the project, add a build step to run the "docker build" command to build the image for the container.
+-Add a second step to run the "docker run" command to start a container using the image created in step 3.
+
+Task-02
+
+-Create Jenkins project to run "docker-compose up -d" command to start the multiple containers defined in the compose file (Hint- use day-19 Application & Database docker-compose file)
+-Set up a cleanup step in the Jenkins project to run "docker-compose down" command to stop and remove the containers defined in the compose file.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
