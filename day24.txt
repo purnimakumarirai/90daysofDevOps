@@ -1,0 +1,50 @@
+Complete Jenkins CI/CD Project
+
+Task-01
+-Create a connection to your Jenkins job and your GitHub Repository via GitHub Integration.
+-Read About GitHub WebHooks and make sure you have CICD setup
+
+
+
+-Fork this repository: -
+
+-> https://github.com/LondheShubham153/node-todo-cicd
+
+1.Open Jenkins.
+
+2.Click on Create a job.
+
+3. Enter name and click on freestyle project and finally click on ok.
+
+4. Provide GitHub URL.
+
+5. Click on Build Steps and select Execute Shell.
+
+6. Click on the Save button and the job will appear on the dashboard screen.
+
+7. Click on job->configure and select “GitHub hook trigger for GITScm polling".
+
+8. Add a webhook. To add it, follow the section given below.
+
+9. Make any changes in the GitHub repo and edit any header file. The job will run automatically and changes will be made.
+
+Adding Jenkins Webhook in Github
+
+Open the GitHub repository.
+Go to “settings” and then to “hooks”.
+Click the “Add webhook” button. Enter “<Jenkins url>//GitHub-webhook/” Payload URL. Click on Add Webhook
+
+
+-Task-02
+n the Execute shell run the application using Docker compose
+You will have to make a Docker Compose file for this Project (Can be a good open source contribution)
+Run the project and give yourself a treat:)
+
+In the Execute shell run the application using Docker Compose You will have to make a Docker Compose file for this Project (Which can be a good open-source contribution) Run the project and give yourself a treat:)
+
+Give docker commands in the executing shell(The project should be integrated with GitHub repo and Jenkins). Click on save.
+2. Click on build now The job will run successfully.
+
+
+Thank you for reading my blog
+
