@@ -1,1 +1,18 @@
 
+Day 27 Task: Jenkins Declarative Pipeline with Docker
+
+Use your Docker Build and Run Knowledge
+
+Task-01
+
+Create a docker-integrated Jenkins declarative pipeline
+Use the above-given syntax using sh inside the stage block
+You will face errors in case of running a job twice, as the docker container will be already created, so for that do task 2
+Task-02
+
+Create a docker-integrated Jenkins declarative pipeline using the docker groovy syntax inside the stage block.
+
+You won't face errors, you can Follow this documentation
+
+Complete your previous projects using this Declarative pipeline approach
+
