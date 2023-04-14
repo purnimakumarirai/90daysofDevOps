@@ -7,6 +7,12 @@ Day 25 Task: Complete Jenkins CI/CD Project - Continued with Documentation
 
 -A well written readme file will help others to understand your project and you will understand how to use the project again without any problems.
 
+-Navigate to the GitHub repository of the project.
+-Let's create a README.md file on GitHub.
+-Commit the changes in the GitHub repository.
+-Check after committing.
+
+
 #Task-02
 
 -Also it's important to keep smaller goals, as its a small task, think of a small Goal you can accomplish.
