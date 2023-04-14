@@ -1,1 +1,18 @@
 Day 25 Task: Complete Jenkins CI/CD Project - Continued with Documentation
+
+
+#Task-01
+
+-Document the process from cloning the repository to adding webhooks, and Deployment, etc. as a README , go through this example
+
+-A well written readme file will help others to understand your project and you will understand how to use the project again without any problems.
+
+#Task-02
+
+-Also it's important to keep smaller goals, as its a small task, think of a small Goal you can accomplish.
+
+-Write about it using this template
+
+-Have small goals and strategies to achieve them, also have a small reward for yourself.
+
+
