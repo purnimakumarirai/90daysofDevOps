@@ -1,0 +1,123 @@
+Day 26 Task: Jenkins Declarative Pipeline
+
+
+One of the most important parts of your DevOps and CICD journey is a Declarative Pipeline Syntax of Jenkins
+
+
+What is Pipeline - A pipeline is a collection of steps or jobs interlinked in a sequence.
+
+Declarative: Declarative is a more recent and advanced implementation of a pipeline as a code.
+
+Scripted: Scripted was the first and most traditional implementation of the pipeline as a code in Jenkins. 
+
+It was designed as a general-purpose DSL (Domain Specific Language) built with Groovy.
+
+--------------------------------------------------------------------------------------------------------------------------------
+        Pipeline syntax
+--------------------------------------------------------------------------------------------------------------------------------
+pipeline {
+    agent any 
+    stages {
+        stage('Build') { 
+            steps {
+                // 
+            }
+        }
+        stage('Test') { 
+            steps {
+                // 
+            }
+        }
+        stage('Deploy') { 
+            steps {
+                // 
+            }
+        }
+    }
+}
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+Task-01
+
+1. Create a New Job, this time select Pipeline instead of Freestyle Project.
+
+2. Follow the Official Jenkins Hello world example
+
+3. Complete the example using the Declarative pipeline
+
+
+
+-localhost:8080
+
+
+-Creation of Pipeline Project
+
+
+#Pipeline syntax
+
+pipeline {
+
+agent any
+
+stages {
+
+stage('Build') {
+
+steps {
+
+//
+
+}
+
+}
+
+stage('Test') {
+
+steps {
+
+//
+
+}
+
+}
+
+stage('Deploy') {
+
+steps {
+
+//
+
+}
+
+}
+
+}
+
+}
+
+--localhost:8080
+
+--Description of file
+
+--Pipeline Script
+
+--Console Output
+
+--Stage view status
+
+--This is Simple Pipeline that prints out "Hello World"
+
+Writing a Declarative Pipeline in Jenkins.
+
+--script pipeline
+
+--pipeline project status
+
+--Console output
+
+
+#thankyou to reading my blog!
+
+
+-----------------------------
