@@ -1,0 +1,33 @@
+Day 29 Task: Jenkins Important interview Questions.
+
+Questions
+
+-What’s the difference between continuous integration, continuous delivery, and continuous deployment?
+
+-Benefits of CI/CD
+
+-What is meant by CI-CD?
+
+-What is Jenkins Pipeline?
+
+-How do you configure the job in Jenkins?
+
+-Where do you find errors in Jenkins?
+
+-In Jenkins how can you find log files?
+
+-Jenkins workflow and write a script for this workflow?
+
+-How to create continuous deployment in Jenkins?
+
+-How build job in Jenkins?
+
+-Why we use pipeline in Jenkins?
+
+-Is Only Jenkins enough for automation?
+
+-How will you handle secrets?
+
+-Explain diff stages in CI-CD setup
+
+-Name some of the plugins in Jenkin?
