@@ -1,0 +1,27 @@
+Day 28 Task: Jenkins Agents
+
+Jenkins Master (Server)
+
+Jenkins’s server or master node holds all key configurations. Jenkins master server is like a control server that orchestrates all the workflow defined in the pipelines. For example, scheduling a job, monitoring the jobs, etc.
+
+jenkins Agent
+
+An agent is typically a machine or container that connects to a Jenkins master and this agent that actually execute all the steps mentioned in a Job. When you create a Jenkins job, you have to assign an agent to it. Every agent has a label as a unique identifier.
+
+Task-01
+
+Create an agent by setting up a node on Jenkins
+
+Create a new AWS EC2 Instance and connect it to master(Where Jenkins is installed)
+
+The connection of master and agent requires SSH and the public-private key pair exchange.
+
+Verify its status under "Nodes" section.
+\
+Task-02
+
+Run your previous Jobs (which you built on Day 26, and Day 27) on the new agent
+
+Use labels for the agent, your master server should trigger builds for the agent server.
+
+
