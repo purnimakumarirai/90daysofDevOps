@@ -31,3 +31,126 @@ Questions
 -Explain diff stages in CI-CD setup
 
 -Name some of the plugins in Jenkin?
+------------------------------------------------------------------------------------------------------------------------
+
+What’s the difference between continuous integration, continuous delivery, and continuous deployment?
+
+Continuous Integration (CI) is a DevOps software development practice that enables developers to merge their code changes in the central repository. That way, automated builds and tests can be run. The amendments by the developers are validated by creating a build and running an automated test against them.
+
+Continuous Delivery (CD) is a DevOps practice that refers to the building, testing, and delivering improvements to the software code. The phase is referred to as the extension of the Continuous Integration phase to make sure that new changes can be released to the customers quickly and in a substantial manner.
+
+Continuous Deployment ensures that any change that passes through the stages of production is released to the end users. There is absolutely no way other than any failure in the test that may stop the deployment of new changes to the output. This step is a great way to speed up the feedback loop with customers and is free from human intervention.
+
+Benefits of CI/CD
+
+-Superior Code Quality
+
+-Reduced Changes & Review Time
+
+-Fault Detection & Isolation
+
+-Reduced Backlog
+
+-Cost Deduction
+
+What is meant by CI-CD?
+
+CI/CD is a method to frequently deliver apps to customers by introducing automation into the stages of app development. The main concepts attributed to CI/CD are continuous integration, continuous delivery, and continuous deployment.
+
+What is Jenkins Pipeline?
+
+Jenkins Pipeline (or simply "Pipeline") is a suite of plugins that supports implementing and integrating continuous delivery pipelines into Jenkins. A continuous delivery pipeline is an automated expression of your process for getting software from version control right through to your users and customers.
+
+How do you configure the job in Jenkins?
+
+Step 1: Create a New Freestyle Project. Click the New Item link on the left-hand side of the Jenkins dashboard. ...
+
+Step 2: Add a Build Step. Scroll down to the Build section. ...
+
+Step 3: Build the Project. Click the Build Now link on the left-hand side of the new project page.
+
+Where do you find errors in Jenkins?
+
+In Jenkins, in the pipeline where the failure occurred, in the pane, select the latest build, and click Console Output. On the Console Output page, check the logs to find the reason for the failure.
+
+In Jenkins how can you find log files?
+
+Log files should be at /var/log/jenkins/jenkins. log, unless customized in org. Jenkins-ci. list.
+
+Jenkins workflow and write a script for this workflow?
+
+How to create a continuous deployment in Jenkins?
+
+-Step 1: Go to the Jenkins Dashboard and select New Item.
+
+-Step 2: Give the Item name and choose the Freestyle project option. Here I have given the item name "demo". Click on the OK button.
+
+-Step 3: In this example, we are keeping it simple and just using it to print HelloWorld.
+
+-Step 4: Select the Execute Windows batch command option from the add build step button and give the command to run your Java program.
+
+-Step 5: Click on Apply then Save button.
+
+-Step 6: Now, go to your previously created Helloworld project and click on the Configure option.
+
+-Step 7: Now, build the HelloWorld project. To do that, click on the Build Now option.
+
+How build a job in Jenkins?
+
+Step 1: Create a New Freestyle Project. Click the New Item link on the left-hand side of the Jenkins dashboard.
+
+Step 2: Add a Build Step. Scroll down to the Build section.
+
+Step 3: Build the Project. Click the Build Now link on the left-hand side of the new project page.
+
+Why do we use pipelines in Jenkins?
+
+Jenkins pipeline allows us to define a complete list of events that happen in the code lifecycle.
+
+Starting from the build to testing and deployment. We can use a set of plugins that help in the implementation of certain processes as a continuous delivery pipeline.
+
+Is Only Jenkins enough for automation?
+
+Jenkins is a Continous Integration tool.
+
+Continuous integration is a process in which all development work (code) is integrated as early as possible in the application. The resulting artefacts are automatically created and tested using the Continous Integration tool. This process allows for identifying errors in an early stage of the project.
+
+12. How will you handle secrets?
+
+Secrets management refers to the tools and methods for managing digital authentication credentials (secrets), including passwords, keys, APIs, and tokens for use in applications, services, privileged accounts and other sensitive parts of the IT ecosystem. While secrets management is applicable across an entire enterprise, the terms “secrets” and “secrets management” are referred to more commonly in IT with regard to DevOps environments, tools, and processes.
+
+Explain diff stages in CI-CD setup
+
+The 7 essential stages of a CI/CD pipeline
+
+The trigger.
+
+Code checkout.
+
+Compile the code.
+
+Run unit tests.
+
+Package the code.
+
+Run acceptance tests.
+
+Delivery or Deployment.
+
+Name some of the plugins in Jenkin.
+
+Git Plugin. Git is one of the most installed Jenkins add-ons available on its repository.
+
+Kubernetes Plugin. Kubernetes is another widely used plugin in Jenkins.
+
+Jira Plugin.
+
+Docker Plugin.
+
+Maven Integration Plugin.
+
+Blue Ocean Plugin.
+
+Amazon EC2 Plugin.
+
+Pipeline Plugin.
