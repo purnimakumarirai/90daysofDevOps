@@ -1,1 +1,19 @@
 
+Day 30 Task: Kubernetes Architecture
+
+Kubernetes Overview
+
+Tasks
+
+-What is Kubernetes? Write in your own words and why do we call it k8s?
+
+-What are the benefits of using k8s?
+
+-Explain the architecture of Kubernetes.
+
+-What is Control Plane?
+
+-Write the difference between kubectl and kubelets.
+
+-Explain the role of the API server.
+
