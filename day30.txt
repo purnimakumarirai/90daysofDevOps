@@ -5,15 +5,101 @@ Kubernetes Overview
 
 Tasks
 
--What is Kubernetes? Write in your own words and why do we call it k8s?
+1. What is Kubernetes? Write in your own words and why do we call it k8s?
 
--What are the benefits of using k8s?
+- Kubernetes (also known as k8s or “kube”) is an open source container orchestration platform that automates many of the manual processes involved in deploying, managing, and scaling containerized applications.
 
--Explain the architecture of Kubernetes.
+- Kubernetes is a portable, extensible, open source platform for managing containerized workloads and services, that facilitates both declarative configuration and automation. 
 
--What is Control Plane?
+- It has a large, rapidly growing ecosystem. 
+- Kubernetes services, support, and tools are widely available.
 
--Write the difference between kubectl and kubelets.
+- The name Kubernetes originates from Greek, meaning helmsman or pilot. 
+- K8s as an abbreviation results from counting the eight letters between the "K" and the "s"
 
--Explain the role of the API server.
+
+2. What are the benefits of using k8s?
+
+#FEATURES
+
+-Automates various manual processes: for instance, Kubernetes will control for you which server will host the container, how it will be launched etc.
+
+-Interacts with several groups of containers: Kubernetes is able to manage more cluster at the same time
+
+-Provides additional services: as well as the management of containers, Kubernetes offers security, networking and storage services
+
+-Self-monitoring: Kubernetes checks constantly the health of nodes and containers
+
+-Horizontal scaling: Kubernetes allows you scaling resources not only vertically but also horizontally, easily and quickly
+
+-Storage orchestration: Kubernetes mounts and add storage system of your choice to run apps
+
+- Automates rollouts and rollbacks: if after a change to your application something goes wrong, Kubernetes will rollback for you
+
+- Container balancing: Kubernetes always knows where to place containers, by calculating the “best location” for them
+
+- Run everywhere: Kubernetes is an open source tool and gives you the freedom to take advantage of on-premises, hybrid, or public cloud infrastructure,     
+
+- letting you move workloads to anywhere you want
+
+
+#BENEFITS
+
+- Control and automate deployments and updates
+
+- Save money by optimizing infrastructural resources thanks to the more efficient use of hardware
+
+- Orchestrate containers on multiple hosts
+ 
+- Solve many common problems deriving by the proliferation of containers by organizing them in “pods” 
+
+- Scale resources and applications in real time
+ 
+- Test and autocorrection of applications
+
+ 
+3. Explain the architecture of Kubernetes.
+
+-The architecture of Kubernetes consists of a control plane and one or more nodes. The control plane is responsible for managing the cluster, while the     nodes run the containerized applications.
+
+-The control plane consists of several components:
+
+-API server: The API server is the central control point for the Kubernetes cluster. It exposes the Kubernetes API, which is used by other components to communicate with the control plane.
+
+-etcd: etcd is a distributed key-value store that is used by Kubernetes to store cluster state and configuration data.
+
+-Controller manager: The controller manager watches the state of the cluster and takes action to ensure that the desired state is achieved. 
+  It includes several controllers for managing different aspects of the cluster, such as replication, endpoints, and services.
+
+-Scheduler: The scheduler assigns workloads to nodes based on resource availability and other constraints.
+
+-Each node in the cluster runs several components:
+
+-kubelet: The kubelet is responsible for managing containers on the node. 
+ It communicates with the API server to receive instructions on which containers to run, and it monitors the containers to ensure they are healthy.
+
+-container runtime: The container runtime is the software that runs the containers on the node.
+Kubernetes supports several container runtimes, including Docker and containerd.
+
+-kube-proxy: The kube-proxy is responsible for managing network connectivity between containers and services in the cluster.
+
+
+
+4. What is Control Plane?
+
+-The Control Plane is the brain of the Kubernetes cluster. 
+-It consists of several components that work together to manage the cluster, including the API server, etcd, controller manager, and scheduler. 
+-The control plane is responsible for storing and managing cluster state and configuration data, scheduling workloads to run on nodes, and ensuring that the desired state of the cluster is achieved.
+
+5. Write the difference between kubectl and kubelets.
+
+-kubectl is the command-line interface (CLI) tool for working with a Kubernetes cluster.
+-Kubelet is the technology that applies, creates, updates, and destroys containers on a Kubernetes node.
+
+6. Explain the role of the API server.
+The Kubernetes API is the front end of the Kubernetes control plane and is how users interact with their Kubernetes cluster. The API (application programming interface) server determines if a request is valid and then processes it.
+In essence, the API is the interface used to manage, create, and configure Kubernetes clusters. It's how the users, external components, and parts of your cluster all communicate with each other.
+At the centre of the Kubernetes control plane are the API server and the HTTP API that it exposes, allowing you to query and manipulate the state of Kubernetes objects.
+
+
 
