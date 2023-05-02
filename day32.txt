@@ -1,0 +1,96 @@
+Day 32 Task: Launching your Kubernetes Cluster with Deployment
+
+
+
+1. What is Deployment in k8s
+
+-A Kubernetes Deployment tells Kubernetes how to create or modify instances of the pods that hold a containerized application. 
+Deployments can help to efficiently scale the number of replica pods, enable the rollout of updated code in a controlled manner, 
+or roll back to an earlier deployment version if necessary.
+
+A Deployment provides a configuration for updates for Pods and ReplicaSets.
+
+
+Task-1:
+
+->Create one Deployment file to deploy a sample todo-app on K8s using "Auto-healing" and "Auto-Scaling" feature 
+
+-add a deployment.yml file (sample is kept in the folder for your reference)
+-apply the deployment to your k8s (minikube) cluster by command kubectl apply -f deployment.yml
+
+
+----------------------------------
+
+
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: todo-app
+  labels:
+    app: todo
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: todo
+  template:
+    metadata:
+      labels:
+        app: todo
+    spec:
+      containers:
+      - name: todo
+        image: rishikeshops/todo-app
+        ports:
+        - containerPort: 3000
+        
+        
+        
+        -Make sure you have a Kubernetes cluster set up, either locally or on a cloud provider.
+-Create a file named “deployment.yml” with the following contents:
+
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+name: todo-app
+labels:
+app: todo
+spec:
+replicas: 2
+selector:
+matchLabels:
+app: todo
+template:
+metadata:
+labels:
+app: todo
+spec:
+containers:
+- name: todo
+image: rishikeshops/todo-app
+ports:
+- containerPort: 3000
+
+
+vi deployment.yml
+cat deployment.yml
+
+
+kubectl apply -f deployment.yml
+
+
+
+
+kubectl get deployment todo-app
+
+
+
+
+kubectl get pods
+
+
+
+
+Thank you for reading my blog !
