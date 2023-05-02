@@ -1,0 +1,99 @@
+Day 33 Task: Working with Namespaces and Services in Kubernetes
+
+Congrats🎊🎉 on updating your Deployment yesterday💥🙌
+
+What are Namespaces and Services in k8s
+
+In Kubernetes, Namespaces are used to create isolated environments for resources. Each Namespace is like a separate cluster within the same physical cluster. Services are used to expose your Pods and Deployments to the network. Read more about Namespace Here
+
+Today's task:
+
+
+Task 1:
+
+Create a Namespace for your Deployment
+
+Use the command kubectl create namespace <namespace-name> to create a Namespace
+
+Update the deployment.yml file to include the Namespace
+
+Apply the updated deployment using the command: kubectl apply -f deployment.yml -n <namespace-name>
+
+Verify that the Namespace has been created by checking the status of the Namespaces in your cluster.
+
+Task 2:
+
+Read about Services, Load Balancing, and Networking in Kubernetes.
+
+
+
+kubectl create namespace <yourname>
+
+
+
+
+
+-kubectl get namespce
+
+
+
+
+
+-kubectl apply -f deployment.yml -n purnima
+
+
+
+
+
+-kubectl get pods
+
+
+
+
+
+#task02-
+
+Read about Services, Load Balancing, and Networking in Kubernetes.
+
+Load balancing: Services provide load balancing across multiple instances of a Pod or multiple Pods, enabling high availability and scalability of an application.
+Service discovery: Services allow clients to discover the endpoints of a set of Pods, abstracting away the complexity of individual Pod management.
+Networking: Services provide network connectivity between Pods and other services within a Kubernetes cluster, making it easier to manage network traffic and communication between components.
+Health checks: Services can monitor the health of the Pods they are load balancing traffic to, and remove any unhealthy Pods from the pool. This ensures that traffic is only sent to healthy Pods, improving the overall reliability of the application.
+IP address management: Services provide a stable IP address and DNS name for a set of Pods, which can be used by external clients to access the application. This allows you to abstract away the underlying infrastructure and focus on the logical components of your application.
+NodePort:
+
+A NodePort service exposes a set of pods to the outside world by opening a specific port on each node in the cluster. Any traffic that is sent to that port on any node will be forwarded to the corresponding pods. NodePort services are often used when you need to expose a service to the public internet or to external clients.
+
+
+COPY
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-nodeport-service
+spec:
+  type: NodePort
+  selector:
+    app: my-app
+  ports:
+    - name: http
+      port: 80
+      targetPort: 8080
+      nodePort: 30000
+ClusterIP:
+
+A ClusterIP service, on the other hand, exposes a set of pods internally within the cluster. It assigns a unique IP address to the service and load balances traffic among the pods. ClusterIP services are typically used for internal communication between pods within the cluster or for exposing services to other services within the same cluster.
+
+
+COPY
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-clusterip-service
+spec:
+  type: ClusterIP
+  selector:
+    app: my-app
+  ports:
+    - name: http
+      port: 80
+      targetPort: 8080
