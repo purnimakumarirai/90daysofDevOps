@@ -1,0 +1,93 @@
+Day 31 Task: Launching your First Kubernetes Cluster with Nginx running
+
+
+What is minikube?
+Ans:- Minikube is a tool which quickly sets up a local Kubernetes cluster on macOS, Linux, and Windows.
+
+It can deploy as a VM, a container, or on bare-metal.
+
+Minikube is a pared-down version of Kubernetes that gives you all the benefits of Kubernetes with a lot less effort.
+
+This makes it an interesting option for users who are new to containers, and also for projects in the world of edge computing and the Internet of Things.
+
+Features of minikube
+Ans :-
+
+(a) Supports the latest Kubernetes release (+6 previous minor versions)
+
+(b) Cross-platform (Linux, macOS, Windows)
+
+(c) Deploy as a VM, a container, or on bare-metal
+
+(d) Multiple container runtimes (CRI-O, containerd, docker)
+
+(e) Direct API endpoint for blazing fast image load and build
+
+(f) Advanced features such as LoadBalancer, filesystem mounts, FeatureGates, and network policy
+
+(g) Addons for easily installed Kubernetes applications
+
+(h) Supports common CI environments
+
+
+#Task-01:
+
+Install minikube on your local
+
+curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-darwin-amd64
+sudo install minikube-darwin-amd64 /usr/local/bin/minikube
+
+
+ii) minikube start
+
+iii) kubectl get po -A
+
+iv) minikube kubectl -- get po -A
+
+v) minikube addons list
+
+What are pods?
+
+-Pods are the smallest deployable units of computing that you can create and manage in Kubernetes.
+
+-A Pod (as in a pod of whales or pea pod) is a group of one or more containers, with shared storage and network resources, and a specification for how to run the containers. 
+
+-A Pod's contents are always co-located and co-scheduled, and run in a shared context.
+
+ -A Pod models an application-specific "logical host": it contains one or more application containers that are relatively tightly coupled.
+ 
+ 
+ Task-02:
+ Create your first pod on Kubernetes through minikube.
+ 
+ 
+ 
+ i) sudo snap install --classic
+
+ii) vi pod.yml
+
+iii) cat pod.yml
+
+apiVersion: v1
+
+kind: Pod
+
+metadata:
+
+name: nginx
+
+containers:
+
+- name: nginx
+
+image: nginx:1.14.2
+
+ports:
+
+- containerPort: 80
+
+iv) kubectl get pods
+
+Thankyou for reading my blog!
+
+
